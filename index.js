@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
   res.sendFile(path.resolve("index.html"));
 })
 
-let urls = {};
+const urls = {};
 
 app.post("/", (req, res)=>{
   const url = req.body.url;
